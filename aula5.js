@@ -6,6 +6,9 @@ var stocks = [
 
 var stocksQuantitySum = 
   stocks
+    .filter(function(stock) {
+      return stock.price >= 5;
+    })
     .map(function(stock) {
       return stock.quantity;
     })
