@@ -11,6 +11,10 @@ function increment() {
   return counter;
 }
 
+increment(); // ???
+
 function increment(count) {
   return count + 1;
 }
+
+increment(1); // 2
